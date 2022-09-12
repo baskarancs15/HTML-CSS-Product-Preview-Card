@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.typo-1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight:500;
+    margin-bottom:.5em ;
+}
+
+.typo-2{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight:700 ;
+    margin-bottom:.5em ;
+    color: hsl(212, 21%, 14%);
+}
+
+.typo-3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight:500 ;
+    color: hsl(228, 12%, 48%);
+}
+
+.typo-4{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2rem;
+    font-weight:700 ;
+    color: hsl(158, 36%, 37%);
+    display: flex;
+}
+
+.typo-5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight:500 ;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+
+.card{
+    width: 400px;
+    height: 650px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10%;
+    border-radius:10px ;
+}
+
+.card-content{
+    padding:1em 0em 1em 1em;
+}
+
+.card-footer{
+    padding:1em 0em 1em 1em;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cart-icon{
+    width: 25px;
+    margin-right: 1em;
+    text-align: center;
+    background-color: none;
+}
+
+.btn{
+    margin: 0 1em 1em 1em;
+    padding: 1em;
+    border: none;
+    border-radius:10px ;
+    background-color:hsl(158, 36%, 37%) ;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight:500 ;
+    text-align: center;
+    width: 350px;
+}
+
+.btn:hover,
+.btn:focus{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+@media (min-width:600px) {
+    .card{
+        width:350px;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+    }
+    img{
+        width: 100%;
+        background-image: url(../images/image-product-desktop.jpg);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius:0;
+    }
+    .card-content{
+        padding: 2em;
+        margin-right:25em;
+        display: flex;
+        flex-direction:column;
+    }
+
+    .card-footer{
+        display: flex;
+    }
+
+    .btn{
+       width: 240px;
+        height: 47px;
+        margin: auto;
+        text-align: center;
+        padding-top: 0.5em;
+        padding-bottom: 1em;
+    }
+
+}
+
